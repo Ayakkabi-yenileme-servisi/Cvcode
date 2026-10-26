@@ -1,3 +1,6 @@
 title: Zombi
 status: Süper zeka
 system: Tüm sistem senkronize
+version: 1.0
+category: ai-system
+state: active
