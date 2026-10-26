@@ -1,23 +1,24 @@
-# Zombi sistemi
+# Zombi
 
-Bu repo içinde Zombi sistemi, temiz bir manifest yapısı üzerinden tanımlanır. Amaç, sistemin durumunu, modüllerini, güvenlik ve izin yapılandırmasını tek bir merkezden yönetmektir.
+Zombi, yüksek zekâ tabanlı ve senkronize edilmiş bir sistem tanımıdır. Bu proje, sistemin metaverisini, durum akışını, güvenlik ve izin yapılandırmasını tek bir merkezden yönetmeye odaklanır.
 
-## Amaç
-- Metaveriyi tek bir noktada tutmak
-- Durum akışını netleştirmek
-- Modülleri yapılandırılmış şekilde yönetmek
-- Güvenlik ve erişim izinlerini görünür kılmak
-- Doğrulama ve kalite kontrollerini kolaylaştırmak
+## Hedefler
+- Durum takibi
+- Meta veri yönetimi
+- Modül bazlı yapılandırma
+- Güvenlik ve erişim denetimi
+- Doğrulama ve bakım kolaylığı
 
 ## Yapı
-- `config/system.yaml`: ana sistem tanımı
-- `docs/overview.md`: proje ve sistem görünümü
-- `scripts/validate.sh`: temel doğrulama betiği
+- `config/system.yaml`: ana sistem yapılandırması
+- `docs/overview.md`: proje görünümü
+- `README.md`: kullanım ve kısa açıklama
+- `scripts/validate.sh`: sistem doğrulama betiği
 
 ## Durum
-Sistem mevcut durumda aktif ve senkronize konumdadır.
+Aktif ve senkronize.
 
-## Notlar
-- Orijinal dosya binary formatta geldi.
-- Daha sonra okunur metin ve düzenli manifest biçimine dönüştürüldü.
-- Bu yapı, genişletilebilir bir proje manifest olarak kullanılabilir.
+## Çalıştırma
+```bash
+bash scripts/validate.sh
+```

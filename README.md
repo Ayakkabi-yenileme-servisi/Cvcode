@@ -2,21 +2,19 @@
 
 Zombi, yüksek zekâ tabanlı ve senkronize edilmiş bir sistem tanımıdır. Bu proje, sistemin metaverisini, durum akışını ve güvenlik/izin yapılandırmasını tek bir noktada yönetmeye odaklanır.
 
-## Hedef
-- Durum takibi
-- Metaveri yönetimi
-- Modül bazlı yapı
-- Güvenlik ve erişim denetimi
-- Doğrulama ve bakım kolaylığı
+## Amaç
+- durum takibi
+- metaveri yönetimi
+- modül bazlı organizasyon
+- erişim kontrolü
+- doğrulama ve sürdürülebilirlik
 
 ## Yapı
-- `config/system.yaml`: ana yapılandırma
-- `docs/overview.md`: açıklama dokümanı
+- `config/system.yaml`: ana yapılandırma dosyası
+- `docs/overview.md`: açıklayıcı doküman
 - `scripts/validate.sh`: doğrulama betiği
 
 ## Kullanım
-Aşağıdaki komut ile sistem yapısını doğrulayabilirsiniz:
-
 ```bash
 bash scripts/validate.sh
 ```

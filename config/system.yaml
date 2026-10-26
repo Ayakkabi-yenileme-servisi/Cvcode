@@ -1,12 +1,12 @@
 system:
   id: zombi-system
   title: Zombi
-  version: 1.2.0
+  version: 2.0.0
   status: active
   category: ai-system
   description: >
     Yüksek zekâ tabanlı ve senkronize edilmiş sistem tasarımı.
-    Sistem, metaveri, durum akışı ve güvenlik yapılandırmasını tek bir noktada yönetir.
+    Sistem, metaveri, durum akışı, güvenlik ve otomasyon gereksinimlerini tek bir merkezden yönetir.
 
 identity:
   author:

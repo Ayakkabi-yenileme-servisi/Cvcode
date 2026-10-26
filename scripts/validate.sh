@@ -9,7 +9,6 @@ if [ ! -f "$CONFIG_FILE" ]; then
   exit 1
 fi
 
-# Gerekli anahtarların kontrolü
 required_keys=(
   "system:"
   "identity:"
@@ -27,7 +26,6 @@ for key in "${required_keys[@]}"; do
   fi
 done
 
-# Temel değer kontrolü
 if ! grep -q "title: Zombi" "$CONFIG_FILE"; then
   echo "Hata: sistem başlığı doğrulanamadı."
   exit 1
