@@ -1,0 +1,83 @@
+system:
+  id: zombi-system
+  title: Zombi
+  version: 1.1.0
+  status: active
+  category: ai-system
+
+identity:
+  author:
+    name: EHAD TONGUZ
+    email: patriot.ehad@gmail.com
+  owner:
+    organization: patriotehad-dot
+    repository: Geli-im-
+  description: >
+    Yüksek zekâ tabanlı senkronize sistem.
+    Sistem, durum akışını yönetir, metaveriyi korur ve otomasyon için hazırdır.
+
+state:
+  current: synchronized
+  history:
+    - initialized
+    - normalized
+    - metadata-expanded
+    - synchronized
+  transitions:
+    initialized: normalized
+    normalized: metadata-expanded
+    metadata-expanded: synchronized
+
+environment:
+  type: repository
+  branch: DileepY/revert_notifications
+  runtime: static-text
+  deployment_target: github-repository
+
+modules:
+  core:
+    name: zombi-core
+    status: active
+    description: Ana sistem davranışını yönetir.
+  metadata:
+    name: zombi-metadata
+    status: active
+    description: Sistem bilgilerini ve tanımlayıcı değerleri tutar.
+  sync:
+    name: zombi-sync
+    status: active
+    description: Durum senkronizasyonunu yönetir.
+  security:
+    name: zombi-security
+    status: active
+    description: İzin, güvenlik ve erişim kontrolünü sağlar.
+
+permissions:
+  read: true
+  write: true
+  execute: false
+  admin: false
+
+security:
+  public: true
+  sensitive: false
+  encrypted: false
+
+tags:
+  - zombi
+  - ai
+  - system
+  - sync
+  - automation
+  - metadata
+  - project-manifest
+
+metadata:
+  created_at: 2026-10-26
+  updated_at: 2026-10-26
+  last_sync: 2026-10-26T11:58:36Z
+
+notes:
+  - Sistem orijinal olarak binary formatta ortaya çıktı.
+  - Daha sonra okunabilir metin ve manifest biçimine dönüştürüldü.
+  - Bu yapı, sistemin daha geniş geliştirilmesine hazırdır.
