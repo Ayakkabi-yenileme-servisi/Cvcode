@@ -4,3 +4,16 @@ system: Tüm sistem senkronize
 version: 1.0
 category: ai-system
 state: active
+author: EHAD TONGUZ
+owner: patriotehad-dot
+description: Yüksek zekâ sistemi ve senkronize edilmiş çalışma durumu.
+tags:
+  - zombi
+  - ai
+  - system
+  - sync
+created_at: 2026-10-26
+environment: repository
+permissions:
+  - read
+  - write
