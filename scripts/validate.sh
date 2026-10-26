@@ -9,7 +9,7 @@ if [ ! -f "$CONFIG_FILE" ]; then
   exit 1
 fi
 
-# Basit doğrulama: gerekli anahtarlar mevcut mu?
+# Gerekli anahtarların kontrolü
 required_keys=(
   "system:"
   "identity:"
@@ -17,6 +17,7 @@ required_keys=(
   "environment:"
   "modules:"
   "permissions:"
+  "security:"
 )
 
 for key in "${required_keys[@]}"; do
@@ -26,4 +27,15 @@ for key in "${required_keys[@]}"; do
   fi
 done
 
-echo "Zombi sistem yapısı doğrulandı."
+# Temel değer kontrolü
+if ! grep -q "title: Zombi" "$CONFIG_FILE"; then
+  echo "Hata: sistem başlığı doğrulanamadı."
+  exit 1
+fi
+
+if ! grep -q "status: active" "$CONFIG_FILE"; then
+  echo "Hata: sistem durumu aktif değil."
+  exit 1
+fi
+
+echo "Zombi sistemi başarıyla doğrulandı."

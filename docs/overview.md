@@ -1,16 +1,23 @@
 # Zombi sistemi
 
-Bu klasör, Zombi sisteminin yapılandırma ve durum tanımlarını barındırır.
-
-## İçerik
-- `config/system.yaml`: ana sistem manifest dosyası
-- `scripts/validate.sh`: sistem dosyasını kontrol eder
+Bu repo içinde Zombi sistemi, temiz bir manifest yapısı üzerinden tanımlanır. Amaç, sistemin durumunu, modüllerini, güvenlik ve izin yapılandırmasını tek bir merkezden yönetmektir.
 
 ## Amaç
-- sistem meta verisini tek bir noktada tutmak
-- durum takibini netleştirmek
-- geliştirmeyi kolaylaştırmak
-- güvenlik ve erişim izinlerini tanımlamak
+- Metaveriyi tek bir noktada tutmak
+- Durum akışını netleştirmek
+- Modülleri yapılandırılmış şekilde yönetmek
+- Güvenlik ve erişim izinlerini görünür kılmak
+- Doğrulama ve kalite kontrollerini kolaylaştırmak
+
+## Yapı
+- `config/system.yaml`: ana sistem tanımı
+- `docs/overview.md`: proje ve sistem görünümü
+- `scripts/validate.sh`: temel doğrulama betiği
 
 ## Durum
-Şu an sistem aktif ve senkronize durumdadır.
+Sistem mevcut durumda aktif ve senkronize konumdadır.
+
+## Notlar
+- Orijinal dosya binary formatta geldi.
+- Daha sonra okunur metin ve düzenli manifest biçimine dönüştürüldü.
+- Bu yapı, genişletilebilir bir proje manifest olarak kullanılabilir.
